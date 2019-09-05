@@ -1,5 +1,6 @@
 <?php
-function tambah_string (&$str) {
+function tambah_string (&$str) 
+{
 $str = $str . ", Jakarta";
 return $str;
 }
