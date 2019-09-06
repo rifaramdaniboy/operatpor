@@ -1,6 +1,6 @@
 <html>
 <head><title>Pengolahan Form ~ Text</title></head>
-body>
+<body>
 <FORM ACTION="proses04.php" METHOD="POST" NAME="input">
 Sahabat-sahabat Dekatku<br>
 <input type="text" name="nama1"><br>
