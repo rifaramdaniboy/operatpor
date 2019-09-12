@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['Input'])) {
 $nama = $_POST['nama'];
-echo "Nama  : $nama";
+echo "Nama  : $nama <br>";
 }
 if (isset($_POST['Input'])) {
 $nis = $_POST['nis'];
@@ -48,6 +48,7 @@ if (isset($_POST['Input'])) {
         echo " - " . $_POST['mapel5'] . "<br>";
     }
 }
+echo "<br>";
 
 if (isset($_POST['Input'])) {
 $nilai = $_POST['ijasah'];

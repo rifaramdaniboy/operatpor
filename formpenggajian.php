@@ -1,6 +1,5 @@
 <html>
-<head><title>Film Kartun Favorit ~ Inputan Combo
-box</title></head>
+<head><title>Gaji Kita Gaji Semuanya</title></head>
 <body>
 <FORM ACTION="prosesgaji.php" METHOD="POST" NAME="input">
 <h2>Form Penggajian : </h2>
