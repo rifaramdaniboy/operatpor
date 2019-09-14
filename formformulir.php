@@ -1,20 +1,20 @@
 <?php
 if (isset($_POST['impan'])) {
-    $x =$_POST['bil'];
-    $y =$_POST['pangkat'];
-    for ($a=0; $a < count($x) ; $a++) { 
-        for ($z=1; $z <= $y[$a] ; $z++) { 
-           echo $x[$a];
-           if ($z < $y[$a]) {
+    $bil =$_POST['bil'];
+    $pangkat =$_POST['pangkat'];
+    for ($i=0; $i < count($bil) ; $i++) { 
+        for ($a=1; $a <= $pangkat[$i] ; $a++) { 
+           echo $bil[$i];
+           if ($a < $pangkat[$i]) {
                echo "x";
            }
         }
-        $hasil = pow($x[$a],$y[$a]);
-        echo "= " . $hasil . " -> ";
+        $hasil = pow($bil[$i],$pangkat[$i]);
+        echo " = " . $hasil . " -> ";
         if ($hasil % 2 == 1) {
-            echo "bilangan Ganjil";
+            echo "bilangan Ganjil <br> ";
         }else {
-            echo "Bilangan Genap";
+            echo "Bilangan Genap <br> ";
         }
         echo "<br>";
 
