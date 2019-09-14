@@ -14,21 +14,24 @@ if (isset($_POST['next'])) {
     echo "Jenis Kelamin :<b> $jl <br></b>";
     echo "Tangal Pembelian   :<b> $tgl <br></b>";
     echo "Jumlah Buku    :<b> $jumlah <br></b>";
-}
-    echo "<hr>";
+} 
+echo "<hr>";
+
 if (isset($_POST['next'])) {
-    $jdlbk = $_POST['jdl'];
-    $kdbk =$_POST['kd'];
+    $nama = $_POST['jdl'];
+    $kelas =$_POST['kd'];
     $pengarang=$_POST['peng'];
     $jnbk=$_POST['kartun'];
-    $hrgbk =$_POST['hrg'];
-
-    echo "Judul Buku : $jdlbk <br>";
-    echo "Kode Buku  : $kdbk <br>";
-    echo "Pengarang Buku  : $pengarang <br>";
-    echo "Jenis Buku  : $jnbk <br>";
-    echo "Harga Buku  : $hrgbk <br>";
+    $hrgbk=$_POST['hrg'];
+    foreach ($nama as $data => $x) {
+        echo "  Judul Buku : " . $nama[$data] . "<br>"; 
+        echo "  Kode Buku  : " . $kelas[$data]."<br>";
+        echo "  Pengarang Buku  : " . $pengarang[$data]."<br>";
+        echo "  Jenis Buku  : " . $jnbk[$data]."<br>";
+        echo "  Harga Buku  : " . $hrgbk[$data]."<hr>";
+    }
 }
 
 ?>
 
+    

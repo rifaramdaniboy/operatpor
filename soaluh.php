@@ -26,17 +26,17 @@ Tanggal Beli : <input type="date" name="tanggal"><br>
 if (isset($_GET['next'])) {
     $jml = $_GET['jml'];
 for ($i=0; $i < $jml ; $i++) { 
-    echo'Judul Buku :<input type="text" name="jdl" require><br>
-    Kode Buku :<input type="text" name="kd"><br>';
-    echo'Pengarang : <input type="text" name="peng" require><br>
-    Jenis Buku :<select name="kartun">
+    echo'Judul Buku :<input type="text" name="jdl[]" require><br>
+    Kode Buku :<input type="text" name="kd[]"><br>';
+    echo'Pengarang : <input type="text" name="peng[]" require><br>
+    Jenis Buku :<select name="kartun[]">
          <option value="novel">Novel</option>
          <option value="viksi">Viksi</option>
          <option value="horror">Horror</option>
          <option value="cergam">Cergam</option>
          <option value="komik">Komik</option>
          </select><br>';
-    echo'Harga Buku :<input type="number" name="hrg" require><br>';
+    echo'Harga Buku :<input type="number" name="hrg[]" require><br>';
     echo "<hr>";     
 }
      
