@@ -1,14 +1,12 @@
 <?php
 if (isset($_POST['next'])) {
+    
     $nm = $_POST['nm'];
     $alamat =$_POST['al'];
     $jl=$_POST['kelamin'];
     $tgl =$_POST['tanggal'];
     $jumlah = $_POST['jml'];
-    echo "<hr>";
-
-    echo "<center><h1>Stuktur Pembelian Buku</h1></center>";
-    echo "<h3 align ='right' > " . date("d/m/y H:i:s ") . "</h3>";
+    
     echo "Nama    :<b> $nm <br></b>";
     echo "Alamat  :<b> $alamat <br></b>";
     echo "Jenis Kelamin :<b> $jl <br></b>";
@@ -31,6 +29,12 @@ if (isset($_POST['next'])) {
         echo "  Harga Buku  : " . $hrgbk[$data]."<hr>";
     }
 }
+echo "<prev>";
+for ($i=0; $i <count($hrgbk) ; $i++) { 
+    $hsl =$hrgbk[$i]+$hsl;
+}
+echo "Total Pembayaran : $hsl ";
+echo "<br>";
 
 ?>
 
